@@ -1,0 +1,59 @@
+Pseudo-code : 
+
+Définir les paramètres : 
+
+    ftpServer = "adresse_du_serveur_ftp" 
+
+    ftpUsername = "nom_utilisateur" 
+
+    ftpPassword = "mot_de_passe" 
+
+    remoteFile = "VAR.tar.gz" 
+
+    localPath = "C:\Temp\VAR.tar.gz" 
+
+  
+
+    smtpServer = "smtp.votre_fournisseur_mail.com" 
+
+    smtpPort = 587 
+
+    emailFrom = "votre_email@example.com" 
+
+    emailTo = "admin@example.com" 
+
+    emailSubject = "Confirmation : Récupération de l'archive VAR" 
+
+  
+
+Fonction TéléchargerFichierFTP(ftpUri, destinationPath, username, password) : 
+
+    ESSAYER : 
+
+        Connexion au serveur FTP 
+
+        Créer une requête FTP pour télécharger le fichier depuis ftpUri 
+
+        Sauvegarder le fichier téléchargé à l'emplacement destinationPath 
+
+        Retourner "Succès" 
+
+    EN CAS D'ERREUR : 
+
+        Retourner "Échec" 
+
+  
+
+Fonction EnvoyerEmail(smtpServer, smtpPort, from, to, subject, body) : 
+
+    ESSAYER : 
+
+        Connecter au serveur SMTP (smtpServer, smtpPort) 
+
+        Envoyer un email avec les paramètres fournis 
+
+        Afficher "Email envoyé" 
+
+    EN CAS D'ERREUR : 
+
+        Afficher "Erreur lors de l'envoi de l'email" 
