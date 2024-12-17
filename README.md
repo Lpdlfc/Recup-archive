@@ -1,4 +1,4 @@
-Description
+  Description
 Ce script PowerShell permet de télécharger un fichier depuis un serveur FTP et de notifier l'administrateur par email du succès ou de l'échec de l'opération. Il est conçu pour être utilisé dans des environnements Windows où PowerShell est disponible.
 
 Fonctionnalités :
